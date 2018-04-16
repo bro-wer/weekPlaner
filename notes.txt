@@ -9,10 +9,19 @@ How should it work?
 4) Stick to the weekly plan
 
 
-What is to be implemented
+What is to be implemented?
 1) scratch of the interface
 2) view for roles
 3) view for goals
 4) view for the week that includes determined roles and goals (or maybe the goals only)
 5) possibility to quickly add new goals
-6) possibility to set email notifications
+6) possibility to log in, set facourite settings
+7) possibility to set email notifications
+
+Where to start?
+1) initial django project
+2) start landing page
+3) use TDD methodology
+4) synchronize git with pythonanywhere
+5) it would be probably the best to start with life roles sub-website
+6) there should be some demo/tutorial as well
