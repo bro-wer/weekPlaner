@@ -1,0 +1,18 @@
+Purpose
+Purpose of this website is to learn myself Django by creating website that can be used to create weekly plans.
+The idea for planner is to follow rules mentioned in the  "The 7 Habits of Highly Effective People" by Stephen R. Covey.
+
+How should it work?
+1) Determine your life roles (the long term targets to be achieved)
+2) Categorize your goals (related to life roles) in to four groups (important/unimportant and urgent/not urgent)
+3) Once a week sit down, review your goals and add them to your plan for the next week
+4) Stick to the weekly plan
+
+
+What is to be implemented
+1) scratch of the interface
+2) view for roles
+3) view for goals
+4) view for the week that includes determined roles and goals (or maybe the goals only)
+5) possibility to quickly add new goals
+6) possibility to set email notifications
