@@ -25,3 +25,6 @@ Where to start?
 4) synchronize git with pythonanywhere
 5) it would be probably the best to start with life roles sub-website
 6) there should be some demo/tutorial as well
+
+
+test from pythoneverywhere
