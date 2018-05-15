@@ -19,12 +19,9 @@ What is to be implemented?
 7) possibility to set email notifications
 
 Where to start?
-1) initial django project
+1) (DONE) initial django project
 2) start landing page
 3) use TDD methodology
-4) synchronize git with pythonanywhere
+4) (DONE) synchronize git with pythoneverywhere
 5) it would be probably the best to start with life roles sub-website
 6) there should be some demo/tutorial as well
-
-
-test from pythoneverywhere

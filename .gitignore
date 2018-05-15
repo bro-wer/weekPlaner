@@ -1,0 +1,6 @@
+
+*.pyc
+weekPlaner/db.sqlite3
+weekPlaner/weekPlaner/__pycache__/*
+weekPlaner/calendarManager/__pycache__/__init__.cpython-36.pyc
+weekPlaner/geckodriver.log

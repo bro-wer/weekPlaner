@@ -25,7 +25,9 @@ SECRET_KEY = '%_-**k0h49iqcqcburtua@y7th_la4+n4ydy9$b^b85+#s=u4o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'bronekwerla.pythonanywhere.com']
+ALLOWED_HOSTS = [u'bronekwerla.pythonanywhere.com',
+                 '127.0.0.1'
+                ]
 
 
 # Application definition
@@ -126,3 +128,7 @@ MEDIA_ROOT = u'/home/bronekwerla/weekPlaner/weekPlaner/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = u'/home/bronekwerla/weekPlaner/weekPlaner/static'
 STATIC_URL = '/static/'
+
+# variables for testing purposes
+SELENIUM_CHROMEDRIVER = './externalTools/chromedriver/chromedriver.exe'
+MAIN_PAGE = 'http://127.0.0.1:8000/'
