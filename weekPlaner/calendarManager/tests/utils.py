@@ -1,7 +1,7 @@
 from django.conf import settings
 from selenium import webdriver
 
-class testManager(object):
+class TestManager():
     """docstring for testManager."""
 
     def __init__(self):
@@ -23,9 +23,6 @@ class testManager(object):
                   "\nElement id: {} \nElement text: {}".format(itemId, expectedText),)
             raise
 
-    def __getItemUsingId(self, itemId):
-        return self.selenium.find_element_by_id(itemId)
-
     def checkClickRedirectUsingItemId(self, itemId, expectedUrl):
         try:
             item = self.__getItemUsingId(itemId)
@@ -36,3 +33,6 @@ class testManager(object):
             print("\nCurrent url is not equal to expected url!" +
                   "\nExpected url: {} \nCurrent url: {}".format(expectedUrl, self.selenium.current_url),)
             raise
+
+    def __getItemUsingId(self, itemId):
+        return self.selenium.find_element_by_id(itemId)

@@ -5,7 +5,7 @@ from . import utils
 class InterfaceTests(LiveServerTestCase):
 
     def setUp(self):
-        self.test = utils.testManager()
+        self.test = utils.TestManager()
         super(InterfaceTests, self).setUp()
 
     def tearDown(self):
