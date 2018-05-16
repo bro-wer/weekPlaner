@@ -15,13 +15,34 @@ What is to be implemented?
 3) view for goals
 4) view for the week that includes determined roles and goals (or maybe the goals only)
 5) possibility to quickly add new goals
-6) possibility to log in, set facourite settings
+6) possibility to log in, set favourite settings
 7) possibility to set email notifications
 
 Where to start?
 1) (DONE) initial django project
-2) start landing page
-3) use TDD methodology
+2) (DONE) start landing page
+3) (DONE) use TDD methodology
 4) (DONE) synchronize git with pythoneverywhere
 5) it would be probably the best to start with life roles sub-website
 6) there should be some demo/tutorial as well
+
+
+
+
+Required pip libs:
+pip install
+<fill here when you find one>
+
+
+### Testing notes
+Currently there is only one app calendarManager and all tests are stored there.
+Testing is done using HTMLTestRunner modified to run in Python3. Because of that the following commands can be used for testing:
+1) Execute all tests
+python .\manage.py test calendarManager.tests.tests.MainTestSuite
+
+
+### External tools:
+1) Chromedriver for selenium
+
+2) HTMLTestRunner.py to create html reports from tests
+http://tungwaiyip.info/software/HTMLTestRunner.html

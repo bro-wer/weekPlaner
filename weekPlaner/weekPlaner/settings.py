@@ -131,4 +131,4 @@ STATIC_URL = '/static/'
 
 # variables for testing purposes
 SELENIUM_CHROMEDRIVER = './externalTools/chromedriver/chromedriver.exe'
-MAIN_PAGE = 'http://127.0.0.1:8000/'
+MAIN_PAGE = 'http://127.0.0.1:8000'
