@@ -5,9 +5,15 @@ from django.views import View
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic import DetailView
+from .src.calendarRenderer import calendarRenderer
 
 # Create your views here.
 app_name='calendarManager'
+
+
+def renderCalendar(request):
+    tmpCalendarRenderer = calendarRenderer(request)
+    return HttpResponse(tmpCalendarRenderer.generateHtml())
 
 
 class HomePage(TemplateView):
@@ -36,7 +42,7 @@ class GoalsPage(TemplateView):
         context = super().get_context_data(**kwargs)
         return context
 
-        
+
 class TodosPage(TemplateView):
 
     template_name = "calendarManager/todos.html"

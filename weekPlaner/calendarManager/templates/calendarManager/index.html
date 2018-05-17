@@ -1,9 +1,15 @@
 {% extends "calendarManager/base.html" %}
 {% load static %}
-{% load staticfiles %}
 
 {% block content%}
 
-<p>index page</p>
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<script src="{% static 'js/index.js' %}"></script>
+
+
+
+{% csrf_token %}
+<body onload="renderCurrentDate()">
+<div id="calendarBox"></div>
 
 {% endblock %}

@@ -46,3 +46,8 @@ python .\manage.py test calendarManager.tests.tests.MainTestSuite
 
 2) HTMLTestRunner.py to create html reports from tests
 http://tungwaiyip.info/software/HTMLTestRunner.html
+
+
+### Inspirations:
+1) Calendar html template found on w3schools
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_calendar
