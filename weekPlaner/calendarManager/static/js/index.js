@@ -40,12 +40,12 @@ function renderCalendar(targetDate) {
 }
 
 function obtainCurrentlySetMonth() {
-  var date = obtainTextByElementId("testId");
+  var date = obtainTextByElementId("liMonthYearId");
   return date.replace(/\d+/g, '');
 }
 
 function obtainCurrentlySetYear() {
-  var date = obtainTextByElementId("testId");
+  var date = obtainTextByElementId("liMonthYearId");
   return date.replace(/[a-z, A-Z]/g, '');
 }
 

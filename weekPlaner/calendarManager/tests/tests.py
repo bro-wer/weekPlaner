@@ -3,6 +3,7 @@ import os
 import unittest
 
 from . import HTMLTestRunner
+from . import tests_calendar
 from . import tests_interface
 
 
@@ -11,7 +12,8 @@ class MainTestSuite(unittest.TestCase):
     def test_Issue(self):
         regression_test = unittest.TestSuite()
         regression_test.addTests([
-            unittest.defaultTestLoader.loadTestsFromTestCase(tests_interface.InterfaceTests),
+            unittest.defaultTestLoader.loadTestsFromTestCase(tests_calendar.CalendarTests),
+            # unittest.defaultTestLoader.loadTestsFromTestCase(tests_interface.InterfaceTests),
         ])
 
         outfile = open(os.path.join(os.getcwd(), "RegressionTestResult.html"), "w")

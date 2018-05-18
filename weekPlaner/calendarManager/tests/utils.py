@@ -1,18 +1,13 @@
 from django.conf import settings
 from selenium import webdriver
 
-class TestManager():
-    """docstring for testManager."""
+class TestUtil():
 
-    def __init__(self):
-        self.selenium = webdriver.Chrome(settings.SELENIUM_CHROMEDRIVER)
-        self.__getMainPage()
+    def __init__(self, selenium):
+        self.selenium = selenium
 
     def destroy(self):
         self.selenium.quit()
-
-    def __getMainPage(self):
-        self.selenium.get(settings.MAIN_PAGE)
 
     def checkItemTextUsingItemId(self, itemId, expectedText):
         try:
@@ -36,3 +31,11 @@ class TestManager():
 
     def __getItemUsingId(self, itemId):
         return self.selenium.find_element_by_id(itemId)
+
+    def assertCurrentUrl(self, expectedUrl):
+        try:
+            assert expectedUrl in self.selenium.current_url
+        except Exception as e:
+            print("\nCurrent url is not equal to expected url!" +
+                  "\nExpected url: {} \nCurrent url: {}".format(expectedUrl, self.selenium.current_url),)
+            raise

@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-05-16 11:55:41</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:16.342914</p>
-<p class='attribute'><strong>Status:</strong> Pass 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-05-18 14:48:55</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:30.268897</p>
+<p class='attribute'><strong>Status:</strong> Pass 2 Error 1</p>
 
 <p class='description'>Regression Tests</p>
 </div>
@@ -221,36 +221,169 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>calendarManager.tests.tests_interface.InterfaceTests</td>
+<tr class='errorClass'>
+    <td>calendarManager.tests.tests_calendar.CalendarTests</td>
     <td>3</td>
-    <td>3</td>
+    <td>2</td>
     <td>0</td>
-    <td>0</td>
+    <td>1</td>
     <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_navbar_has_goals_button</div></td>
-    <td colspan='5' align='center'>pass</td>
+    <td class='none'><div class='testcase'>test_current_date_is_displayed_at_start</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 5
+getCurrentMonthAsInt: 6
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 6
+getCurrentMonthAsInt: 7
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 7
+getCurrentMonthAsInt: 8
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 8
+getCurrentMonthAsInt: 9
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 9
+getCurrentMonthAsInt: 10
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 10
+getCurrentMonthAsInt: 11
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 11
+getCurrentMonthAsInt: 12
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 12
+getCurrentMonthAsInt: 1
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 1
+getCurrentMonthAsInt: 2
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 2
+getCurrentMonthAsInt: 3
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 3
+getCurrentMonthAsInt: 4
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 4
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_navbar_has_roles_button</div></td>
-    <td colspan='5' align='center'>pass</td>
+    <td class='none'><div class='testcase'>test_next_button_forwards_calendar_by_one_month</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 5
+getCurrentMonthAsInt: 6
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 6
+getCurrentMonthAsInt: 7
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 7
+getCurrentMonthAsInt: 8
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 8
+getCurrentMonthAsInt: 9
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 9
+getCurrentMonthAsInt: 10
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 10
+getCurrentMonthAsInt: 11
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 11
+getCurrentMonthAsInt: 12
+getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 12
+getCurrentMonthAsInt: 1
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 1
+getCurrentMonthAsInt: 2
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 2
+getCurrentMonthAsInt: 3
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 3
+getCurrentMonthAsInt: 4
+getCurrentYearAsInt: 2019
+getCurrentMonthAsInt: 4
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_navbar_has_todos_button</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_prev_button_backwards_calendar_by_one_month</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: getCurrentYearAsInt: 2018
+getCurrentMonthAsInt: 5
+Traceback (most recent call last):
+  File "C:\Users\bwwa\Documents\GitHub\weekPlaner\weekPlaner\calendarManager\tests\tests_calendar.py", line 60, in test_prev_button_backwards_calendar_by_one_month
+    self.indexPage.clickPrevMonth()
+AttributeError: 'indexPage' object has no attribute 'clickPrevMonth'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
     <td>3</td>
-    <td>3</td>
+    <td>2</td>
     <td>0</td>
-    <td>0</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

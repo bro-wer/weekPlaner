@@ -11,11 +11,6 @@ class calendarRenderer(object):
         self.useCurrentMonth = False
         self.__parseWsgiRequestToDict()
 
-        # print("self.request")
-        # for key, value in self.request.items():
-        #     print("{} : {}".format(key, value))
-
-
     def __parseWsgiRequestToDict(self):
         for key, value in self.request.items():
             self.request[key] = value.pop()
@@ -36,6 +31,8 @@ class calendarRenderer(object):
 
         elif self.request['targetDate'] == "PREV_MONTH":
             # TODO: make it pretty and move to utils!
+            print("self.request['currentlySetYear']")
+            print(self.request['currentlySetYear'])
             tmpYear = int(self.request['currentlySetYear'])
             tmpMonth = utils.parseMonthToInt(self.request['currentlySetMonth'])
 
@@ -51,6 +48,8 @@ class calendarRenderer(object):
 
         elif self.request['targetDate'] == "NEXT_MONTH":
             # TODO: make it pretty and move to utils!
+            print("self.request['currentlySetYear']")
+            print(self.request['currentlySetYear'])
             tmpYear = int(self.request['currentlySetYear'])
             tmpMonth = utils.parseMonthToInt(self.request['currentlySetMonth'])
 
@@ -77,9 +76,9 @@ class calendarRenderer(object):
     def __generateCalendarHeader(self):
         self.innerHtml += '<div class="month">\n'
         self.innerHtml += '  <ul>\n'
-        self.innerHtml += '    <li class="prev" onclick="generatePrevMonth()">&#10094;</li>\n'
-        self.innerHtml += '    <li class="next" onclick="generateNextMonth()">&#10095;</li>\n'
-        self.innerHtml += '    <li id="testId">' + str(self.targetMonth) + '<br><span style="font-size:18px">' + str(self.targetYear) + '</span></li>\n'
+        self.innerHtml += '    <li id="liPrevMonthId" class="prev" onclick="generatePrevMonth()">&#10094;</li>\n'
+        self.innerHtml += '    <li id="liNextMonthId" class="next" onclick="generateNextMonth()">&#10095;</li>\n'
+        self.innerHtml += '    <li id="liMonthYearId">' + str(self.targetMonth) + '<br><span style="font-size:18px">' + str(self.targetYear) + '</span></li>\n'
         self.innerHtml += '  </ul>\n'
         self.innerHtml += '</div>\n'
 
